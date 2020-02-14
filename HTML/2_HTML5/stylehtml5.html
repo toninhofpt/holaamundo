@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,600,700i,800|Open+Sans|Roboto:300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+      <meta charset = "ISO-8859-1">
+      <title>Styles</title>
+	<style type = "text/css">
+         em{
+	    font-weight: 900;
+            color: pink; 
+	   }   
+         h1{
+            font-family: 'Roboto', sans-serif;
+	    position: absolute;
+            top: 20px;
+            left: 200px;
+            z-index: 3;
+            font-size: 20pt;color: purple;		 }
+         h2       { font-family: tahoma, helvetica, sans-serif; 
+				position: absolute;
+                 top: 60px;
+                 left: 150px;
+                 z-index: 3;
+                 font-size: 20pt;color: blue;		 }				 
+         p{ font-size: 12pt;
+            font-family: arial, sans-serif; 
+	  }
+	  .background_image   
+	         { position: absolute;
+                 top: 0px;
+                 left: 0px;
+                 z-index: 1; }
+          .foreground_image   { position: absolute;
+                 top: 25px;
+                 left: 100px;
+                 z-index: 2; }
+	.text1    { position: absolute;
+                 top: 120px;
+                 left: 150px;
+                 z-index: 3;
+                 font-size: 20pt;
+                 font-family: tahoma, geneva, sans-serif; } 
+	.text2    { position: absolute;
+                 top: 150px;
+                 left: 150px;
+                 z-index: 3;
+                 font-size: 40pt;
+                 font-family: tahoma, geneva, sans-serif;
+                 color: red; } 				 
+
+      </style>
+   </head>
+   <body>
+      <h1>FCA UNAM</h1>
+      <h2>Desarrollo de sitios web con transacciones en línea</h1>
+      <p><img src = "images/background_image.png" class = "background_image"
+         alt = "First positioned image" /></p>
+      
+      <p>
+      	<img src = "images/foreground_image.png" class = "foreground_image"
+         alt = "Second positioned image" />
+      </p>  
+   
+      <!-- The style attribute allows you to declare -->
+      <!-- inline styles. You should separate multiple -->
+      <!-- style properties with a semicolon. -->
+      <p class = "text1">This text has the 
+         <em>font-size</em> style applied to it, making it 20pt.
+      </p>
+
+      <p class = "text1">
+         This text has the <em>font-size</em> and 
+         <em>color</em> styles applied to it, making it
+         20pt and deep sky blue.</p>
+   </body>
+</html>
+
+

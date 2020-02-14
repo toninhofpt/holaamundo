@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+ul.circulos { 
+width: 100%; 
+margin: 20px auto; 
+text-align: center;
+list-style-type: none; 
+font: bold 17px arial;
+} 
+ 
+ul.circulos li { 
+display: inline; 
+margin: 0;
+padding: 0;
+} 
+ 
+ul.circulos li a { 
+display: inline-block;
+text-decoration: none; 
+color:#FFFFFF; 
+background:#555; 
+padding: 5px;
+width:150px; 
+height:150px; 
+-o-border-radius: 50px;
+-moz-border-radius: 50px; 
+-webkit-border-radius: 50px; 
+-ms-border-radius: 50px ;
+border-radius: 200px 50px 200px 50px;
+} 
+ul.circulos a span { 
+position: relative;
+top:40%;
+padding: 5px;
+text-align: center;
+} 
+ul.circulos a:hover { 
+background:#000000;
+}

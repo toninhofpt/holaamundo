@@ -1,0 +1,183 @@
+<!DOCTYPE html> 
+<!-- LÍNEA OBLIGATORIA en los documentos de HTML5 para que los navegadores desplieguen la página en modo estándar de acuerdo con las especificaciones de html y css -->
+<!-- Esto es un comentario "you don't say?" -->
+<!-- newforminputtypes.html -->
+<!-- Ejemplo HTML5 -->
+<!-- New HTML5 form input types and attributes. -->
+<html>
+   <head>
+      <meta charset="UTF-8"><!-- Codificación de caractéres, UTF-8 es el más utilizado y ISO-8859-1 se utiliza para caract´res latinos -->	  
+	  <!-- Pueden incluirse instrucciones especiales de formato de documento CSS -->	  
+      <title>New HTML5 Input Types</title><!-- Elemento anidado que describe las páginas web, identificador cuando se agrega a marcadores o favoritos -->	  
+   </head>
+
+   <body>
+	
+      <h1>New HTML5 Input Types</h1>
+
+	  
+      <form method = "post" autocomplete = "on" action="#">
+         <p><label>First Name:
+            <input type = "text" id = "firstName" 
+               placeholder = "First name" /> (First name)
+            </label></p>
+         <p><label>Last Name:
+            <input type = "text" id = "lastName" 
+               placeholder = "Last name" /> (Last name)
+            </label></p>
+         <p><label for = "txtList">Astrological Sign:
+            <input type = "text" id = "txtList" 
+               placeholder = "Select one" list = "sign" />
+            <datalist id = "sign">
+               <option value = "Aries">
+               <option value = "Taurus">
+               <option value = "Gemini">
+               <option value = "Cancer">
+               <option value = "Leo">
+               <option value = "Virgo">
+               <option value = "Libra">
+			   <option value = "Ophiuchus">
+               <option value = "Scorpio">
+               <option value = "Sagittarius">
+               <option value = "Capricorn">
+               <option value = "Aquarius">
+               <option value = "Pisces">   
+            </datalist>
+         </label></p>
+         <p>
+            <label>Color:
+               <input type = "color" autofocus /> 
+                  (Hexadecimal code such as #ADD8E6)
+            </label>
+         </p>
+         <p>
+            <label>Date:
+               <input type = "date" /> 
+                  (dd-mm-yyyy)
+            </label>
+         </p>
+
+         <p>
+            <label>Datetime-local:
+               <input type = "datetime-local" /> 
+                  (yyyy-mm-ddThh:mm, such as 2012-01-27T03:15)
+            </label>
+         </p>
+         <p>
+            <label>Email:
+               <input type = "email" placeholder = "name@domain.com" 
+                  required /> (name@domain.com)
+            </label>
+         </p>
+         <p>
+            <label>Month:
+               <input type = "month" /> (yyyy-mm)
+            </label>
+         </p>
+         <p>
+            <label>Number:
+               <input type = "number" 
+                  min = "0"
+                  max = "8"
+                  step = "2"
+                  value = "4" />
+            </label> (Enter a number between 0 and 7)
+         </p>
+         <p>
+            <label>Range:
+               0 <input type = "range" 
+                  min = "0"
+                  max = "20"
+                  value = "10" /> 20
+            </label>
+         </p>
+         <p>
+            <label>Search:
+               <input type = "search" placeholder = "search query" />
+            </label> (Enter your search query here.)
+         </p>
+         <p>
+            <label>Tel:
+               <input type = "tel" placeholder = "(###) ###-####" 
+                  pattern = "\(\d{3}\) +\d{3}-\d{4}" required /> 
+                  (###) ###-####
+            </label>
+         </p>
+         <p>
+            <label>Time:
+               <input type = "time" /> (hh:mm)
+            </label>
+         </p>
+         <p>
+            <label>URL:
+               <input type = "url" 
+                  placeholder = "http://www.domainname.com" /> 
+                  (http://www.domainname.com)
+            </label>
+         </p>
+		 <p>
+            <label>Password:
+               <input type = "password" 
+                  placeholder = "querty..ok not" /> 
+                  (querty | 123456 | teamo | batman)
+            </label>
+         </p>
+         <p>
+            <label>Week:
+               <input type = "week" /> 
+                  (yyyy-Wnn, such as 2012-W01)
+            </label>
+         </p>
+		 
+		 
+		 
+		 <p>
+            <label>Things you liked:</label><br>
+
+            <label>Site design
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Design"></label>
+            <label>Links
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Links"></label>
+            <label>Ease of use
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Ease"></label> 
+            <label>Images 
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Images"></label>
+            <label>Source code
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Code"></label>
+         </p>
+		          <!-- <input type = "radio"> creates a radio -->
+         <!-- button. The difference between radio buttons -->
+         <!-- and checkboxes is that only one radio button -->
+         <!-- in a group can be selected. -->
+         <p>
+            <label>How did you get to our site?:</label><br>
+
+            <label>Search engine
+               <input name = "howtosite" type = "radio"
+                  value = "search engine" checked></label>
+            <label>Links from another site
+               <input name = "howtosite" type = "radio" 
+                  value = "link"></label> 
+            <label>Web site
+               <input name = "howtosite" type = "radio" 
+                  value = "deitel.com"></label>
+            <label>Reference in a book
+               <input name = "howtosite" type = "radio" 
+                  value = "book"></label>
+            <label>Other
+               <input name = "howtosite" type = "radio" 
+                  value = "other"></label>
+         </p>
+         <p>
+            <input type = "submit" value = "Submit" />
+            <input type = "reset" value = "Clear" />
+         </p>   
+      </form>
+   </body>
+</html>
+
